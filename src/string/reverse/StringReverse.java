@@ -39,7 +39,15 @@ public class StringReverse {
         return Arrays.stream(inputArr).collect(Collectors.joining());
     }
 
+    public static void reverse2(String input, int i) {
+        if(i==input.length()) return;
+        String c = input.substring(i,i+1);
+        reverse2(input, i+1);
+        System.out.print(c);
+    }
+
     public static void main(String[] args) {
         System.out.println(reverse1("12"));
+        reverse2("puneet",0);
     }
 }

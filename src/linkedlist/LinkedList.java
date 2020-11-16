@@ -10,7 +10,7 @@ public class LinkedList {
     }
 
     public void addLast(Node n) {
-        
+
     }
 
     public void delete(Node n) {
